@@ -1,0 +1,3 @@
+[submodule "OMCompiler"]
+	path = OMCompiler
+	url = git@github.com:OpenModelica/OMCompiler.git
