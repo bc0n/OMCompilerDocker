@@ -5,8 +5,7 @@ Building this docker file creates an image that builds the Open Modelica compile
 The OMCompiler is included as a submodule.
 
 After cloning, cd into the repository and
-`git submodule init`
-`git submodule update`
+`git submodule update --init --recursive`
 to load the compiler source.
 
 Next, build the image
