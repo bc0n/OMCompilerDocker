@@ -33,7 +33,7 @@ WORKDIR /omcompiler
 
 
 #build OMCompiler --- if build fails, issue these manually and inspect the messages
-RUN make clean
+#RUN make clean
 RUN ./configure --prefix=/usr/local --disable-modelica3D
 RUN make
 
