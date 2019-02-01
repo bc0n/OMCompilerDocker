@@ -17,6 +17,9 @@ RUN apt install -y clang
 RUN apt install -y git
 RUN apt install -y gettext
 RUN apt install -y gdb
+RUN apt install -y pkg-config
+RUN apt install -y flex
+RUN apt install -y bison
 
 #OMCompiler requirements
 #RUN apt install -y libexpat1-dev libtool lp-solve liblapack-dev
@@ -34,6 +37,7 @@ WORKDIR /omcompiler
 
 #build OMCompiler --- if build fails, issue these manually and inspect the messages
 #RUN make clean
+RUN autoconf
 RUN ./configure --prefix=/usr/local --disable-modelica3D
 RUN make
 
