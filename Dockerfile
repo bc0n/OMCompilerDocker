@@ -40,6 +40,7 @@ WORKDIR /omcompiler
 RUN autoconf
 RUN ./configure --prefix=/usr/local --disable-modelica3D
 RUN make
+RUN make install
 
 #test build
 
